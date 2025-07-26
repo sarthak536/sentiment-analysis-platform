@@ -1,4 +1,12 @@
-# 🤖 SentimentAI - AI-Powered Sentiment Analysis Platform
+# 🤖 SentimentAI -*Transform customer feedback into actionable insights with cutting-edge AI technology*
+
+**🔗 [Live Demo](https://sarthak536.github.io/sentiment-analysis-platform/)** • [📖 Documentation](#-features) • [🛠️ Installation](#️-installation) • [🤝 Contributing](#-contributing)-Powered Sentiment An## 🎮 Try It Now!
+
+<div align="center">
+
+[![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-Try%20SentimentAI-success?style=for-the-badge&logo=github)](https://sarthak536.github.io/sentiment-analysis-platform/)
+
+**✨ Experience the full sentiment analysis platform instantly!**Platform
 
 <div align="center">
 
