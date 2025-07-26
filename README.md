@@ -339,6 +339,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 [![GitHub stars](https://img.shields.io/github/stars/sarthak536/sentiment-analysis-platform?style=social)](https://github.com/sarthak536/sentiment-analysis-platform/stargazers)
 
-Made with ❤️ by [Sarthak Goel](https://github.com/sarthak536)
+Made with ❤️ and ☕ by [Sarthak Goel](https://github.com/sarthak536)
 
 </div>
