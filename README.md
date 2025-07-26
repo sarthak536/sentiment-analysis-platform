@@ -37,7 +37,7 @@
 ### 🤖 **AI-Powered Analysis**
 - **Multi-model Support**: BERT, RoBERTa, and custom transformer models
 - **Context Understanding**: Detects sarcasm, nuance, and complex emotions
-- **Multi-language Support**: Analyze text in 25+ languages
+- **English Language Focus**: Optimized for English text analysis with high accuracy
 - **Confidence Scoring**: Detailed accuracy metrics for each prediction
 
 ### 🎨 **Beautiful Interface**

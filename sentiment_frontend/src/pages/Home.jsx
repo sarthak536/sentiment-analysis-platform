@@ -93,8 +93,8 @@ function Home() {
           {[
             { number: "150K+", label: "Reviews Analyzed" },
             { number: "99.2%", label: "Accuracy Rate" },
-            { number: "25+", label: "Languages" },
-            { number: "24/7", label: "Support" }
+            { number: "English", label: "Language Focus" },
+            { number: "24/7", label: "Demo Available" }
           ].map((stat, index) => (
             <div key={index} className="text-center p-4">
               <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">

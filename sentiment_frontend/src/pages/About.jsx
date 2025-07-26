@@ -27,7 +27,7 @@ function About() {
               {
                 icon: "🧠",
                 title: "Advanced AI Models",
-                desc: "Our sentiment analysis uses state-of-the-art transformer models trained on millions of text samples to understand context, sarcasm, and nuanced emotions.",
+                desc: "Our sentiment analysis uses RoBERTa transformer model specifically trained on Twitter data to understand context, sarcasm, and social media language patterns in English text.",
                 color: "from-purple-500 to-indigo-600"
               },
               {
@@ -72,7 +72,7 @@ function About() {
               <div className="grid grid-cols-2 gap-6 mt-10">
                 {[
                   { metric: "150K+", label: "Reviews Analyzed", icon: "📊" },
-                  { metric: "25+", label: "Languages", icon: "🌍" },
+                  { metric: "English", label: "Language Focus", icon: "🔤" },
                   { metric: "500+", label: "Companies", icon: "🏢" },
                   { metric: "<100ms", label: "Response Time", icon: "⚡" }
                 ].map((stat, index) => (
@@ -88,7 +88,7 @@ function About() {
               <div className="mt-8 p-6 bg-white/40 rounded-xl">
                 <h4 className="font-semibold text-gray-800 mb-4">Powered By</h4>
                 <div className="flex flex-wrap gap-2 justify-center">
-                  {["PyTorch", "Transformers", "BERT", "RoBERTa", "Flask", "React"].map((tech, index) => (
+                  {["RoBERTa", "Transformers", "Hugging Face", "Twitter Data", "Flask", "React"].map((tech, index) => (
                     <span key={index} className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium">
                       {tech}
                     </span>

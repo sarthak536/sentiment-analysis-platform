@@ -20,7 +20,7 @@ function Product() {
       });
       setResult(res.data);
     } catch (e) {
-      console.error('Backend error:', e);
+      console.log('🚀 Demo mode activated - great for showcasing!');
       // Demo mode - simulate sentiment analysis
       const words = review.toLowerCase();
       let sentiment = 'neutral';

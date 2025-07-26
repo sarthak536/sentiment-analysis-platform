@@ -15,6 +15,7 @@ function ProductsPage() {
       .catch(err => {
         console.error('Backend connection error:', err);
         // Demo data when backend is not available
+        console.log('🚀 Running in demo mode - perfect for GitHub Pages deployment!');
         setSummary({
           "5.5\" Cell Phones Unlocked Android 5.1 Quad Core Dual Sim-JUNING GSM/3G Smartphone White": {
             "positive": 15,
