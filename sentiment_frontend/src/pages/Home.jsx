@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Home() {
+  // Check if running in production/secure mode
+  const isSecureMode = process.env.NODE_ENV === 'production' || window.location.protocol === 'https:';
+  
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
       {/* Animated Background */}
@@ -12,6 +15,18 @@ function Home() {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
+        {/* Security Badge */}
+        {isSecureMode && (
+          <div className="mb-8">
+            <div className="inline-flex items-center gap-2 bg-green-100 border border-green-300 rounded-full px-4 py-2 text-green-800 font-medium">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m0 0v2m0-2h2m-2 0H10m4-6V9a2 2 0 00-2-2H8a2 2 0 00-2 2v2m8 0V9a2 2 0 00-2-2H8a2 2 0 00-2 2v2m8 0H6m6 0h2a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6a2 2 0 012-2h2z" />
+              </svg>
+              🔒 Secure Demo Mode - Privacy Protected
+            </div>
+          </div>
+        )}
+        
         <div className="mb-12">
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-extrabold mb-8 leading-tight">

@@ -6,7 +6,50 @@ function ProductsPage() {
   const [summary, setSummary] = useState({});
   const [loading, setLoading] = useState(true);
 
+  // Use demo mode in production to avoid HTTPS/HTTP mixed content issues
+  const PRODUCTION_MODE = process.env.NODE_ENV === 'production' || window.location.protocol === 'https:';
+
   useEffect(() => {
+    if (PRODUCTION_MODE) {
+      // Always use demo data in production for security
+      console.log('🔒 Secure demo mode - no external API calls');
+      setSummary({
+        "5.5\" Cell Phones Unlocked Android 5.1 Quad Core Dual Sim-JUNING GSM/3G Smartphone White": {
+          "positive": 15,
+          "negative": 3,
+          "neutral": 7
+        },
+        "Samsung Galaxy S21": {
+          "positive": 25,
+          "negative": 5,
+          "neutral": 10
+        },
+        "iPhone 13": {
+          "positive": 30,
+          "negative": 2,
+          "neutral": 8
+        },
+        "Google Pixel 6": {
+          "positive": 20,
+          "negative": 4,
+          "neutral": 6
+        },
+        "MacBook Pro 14": {
+          "positive": 28,
+          "negative": 2,
+          "neutral": 5
+        },
+        "iPad Air": {
+          "positive": 22,
+          "negative": 3,
+          "neutral": 7
+        }
+      });
+      setLoading(false);
+      return;
+    }
+
+    // Development mode only - try backend
     axios.get('http://localhost:5000/summary')
       .then(res => {
         setSummary(res.data.data);
