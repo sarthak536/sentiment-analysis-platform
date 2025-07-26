@@ -57,11 +57,16 @@ function Product() {
 
     // Development mode only - try backend
     try {
-      const res = await axios.post('http://localhost:5000/analyze', {
-        product_type: decodedProductType,
-        review: review
-      });
-      setResult(res.data);
+      // Note: This will only work in development environment
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        const res = await axios.post('http://localhost:5000/analyze', {
+          product_type: decodedProductType,
+          review: review
+        });
+        setResult(res.data);
+      } else {
+        throw new Error('Production mode - using demo analysis');
+      }
     } catch (e) {
       console.log('🚀 Demo mode activated - great for showcasing!');
       // Demo mode - simulate sentiment analysis

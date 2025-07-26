@@ -50,40 +50,67 @@ function ProductsPage() {
     }
 
     // Development mode only - try backend
-    axios.get('http://localhost:5000/summary')
-      .then(res => {
-        setSummary(res.data.data);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error('Backend connection error:', err);
-        // Demo data when backend is not available
-        console.log('🚀 Running in demo mode - perfect for GitHub Pages deployment!');
-        setSummary({
-          "5.5\" Cell Phones Unlocked Android 5.1 Quad Core Dual Sim-JUNING GSM/3G Smartphone White": {
-            "positive": 15,
-            "negative": 3,
-            "neutral": 7
-          },
-          "Samsung Galaxy S21": {
-            "positive": 25,
-            "negative": 5,
-            "neutral": 10
-          },
-          "iPhone 13": {
-            "positive": 30,
-            "negative": 2,
-            "neutral": 8
-          },
-          "Google Pixel 6": {
-            "positive": 20,
-            "negative": 4,
-            "neutral": 6
-          }
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      axios.get('http://localhost:5000/summary')
+        .then(res => {
+          setSummary(res.data.data);
+          setLoading(false);
+        })
+        .catch(err => {
+          console.error('Backend connection error:', err);
+          // Demo data when backend is not available
+          console.log('🚀 Running in demo mode - perfect for GitHub Pages deployment!');
+          setSummary({
+            "5.5\" Cell Phones Unlocked Android 5.1 Quad Core Dual Sim-JUNING GSM/3G Smartphone White": {
+              "positive": 15,
+              "negative": 3,
+              "neutral": 7
+            },
+            "Samsung Galaxy S21": {
+              "positive": 25,
+              "negative": 5,
+              "neutral": 10
+            },
+            "iPhone 13": {
+              "positive": 30,
+              "negative": 2,
+              "neutral": 8
+            },
+            "Google Pixel 6": {
+              "positive": 20,
+              "negative": 4,
+              "neutral": 6
+            }
+          });
+          setLoading(false);
         });
-        setLoading(false);
+    } else {
+      // Production mode - use demo data immediately
+      setSummary({
+        "5.5\" Cell Phones Unlocked Android 5.1 Quad Core Dual Sim-JUNING GSM/3G Smartphone White": {
+          "positive": 15,
+          "negative": 3,
+          "neutral": 7
+        },
+        "Samsung Galaxy S21": {
+          "positive": 25,
+          "negative": 5,
+          "neutral": 10
+        },
+        "iPhone 13": {
+          "positive": 30,
+          "negative": 2,
+          "neutral": 8
+        },
+        "Google Pixel 6": {
+          "positive": 20,
+          "negative": 4,
+          "neutral": 6
+        }
       });
-  }, []);
+      setLoading(false);
+    }
+  }, [PRODUCTION_MODE]);
 
   if (loading) {
     return (
