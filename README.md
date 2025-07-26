@@ -12,9 +12,17 @@
 
 *Transform customer feedback into actionable insights with cutting-edge AI technology*
 
-[🚀 Live Demo](#-live-demo) • [📖 Documentation](#-features) • [🛠️ Installation](#️-installation) • [🤝 Contributing](#-contributing)
+**� [Live Demo](https://sarthak536.github.io/sentiment-analysis-platform/)** • [📖 Documentation](#-features) • [🛠️ Installation](#️-installation) • [🤝 Contributing](#-contributing)
 
 </div>
+
+---
+
+## 🚀 Live Demo
+
+**Experience SentimentAI in action:** [https://sarthak536.github.io/sentiment-analysis-platform/](https://sarthak536.github.io/sentiment-analysis-platform/)
+
+> ℹ️ **Demo Mode**: The live demo runs in demonstration mode with keyword-based sentiment analysis. For full ML capabilities, see the [Backend Setup](#backend-setup) section.
 
 ---
 
@@ -32,7 +40,21 @@
 
 ---
 
-## 🎯 Features
+## � Try It Now!
+
+<div align="center">
+
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Try%20SentimentAI-success?style=for-the-badge&logo=github)](https://sarthak536.github.io/sentiment-analysis-platform/)
+
+**✨ Experience the full sentiment analysis platform instantly!**
+
+*No installation required • Works in your browser • Fully responsive design*
+
+</div>
+
+---
+
+## �🎯 Features
 
 ### 🤖 **AI-Powered Analysis**
 - **Multi-model Support**: BERT, RoBERTa, and custom transformer models
