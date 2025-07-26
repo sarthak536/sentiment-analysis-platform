@@ -21,7 +21,7 @@ def get_db_config():
         "host": os.getenv("DB_HOST", "localhost"),
         "dbname": os.getenv("DB_NAME", "sentiment_db"),
         "user": os.getenv("DB_USER", "sentiment_user"),
-        "password": os.getenv("DB_PASSWORD", "SA@g250804"),
+        "password": os.getenv("DB_PASSWORD"),  # No default password for security
         "port": int(os.getenv("DB_PORT", "5432"))
     }
 
@@ -40,9 +40,12 @@ try:
     DB_CONFIG = get_db_config()
     validate_db_config(DB_CONFIG)
     print("[INFO] Database configuration validated successfully")
+    DATABASE_AVAILABLE = True
 except Exception as e:
-    print(f"[ERROR] Invalid database configuration: {e}")
-    raise
+    print(f"[WARNING] Database configuration invalid: {e}")
+    print("[INFO] Running in demo mode without database persistence")
+    DB_CONFIG = None
+    DATABASE_AVAILABLE = False
 
 CSV_PATH = os.path.join(os.path.dirname(__file__), "Amazon_Unlocked_Mobile.csv")
 
