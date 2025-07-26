@@ -329,7 +329,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Sarthak Goel**
 - 📧 Email: sarthakgoel534@gmail.com
 - 🔗 GitHub: [@sarthak536](https://github.com/sarthak536)
-- 💼 LinkedIn: [Sarthak Goel](https://www.linkedin.com/in/sarthak-goel-/)
+- 💼 LinkedIn: [Sarthak Goel](https://www.linkedin.com/in/sarthak-goel-608585319/)
 
 ---
 
