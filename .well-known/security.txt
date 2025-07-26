@@ -1,0 +1,3 @@
+Contact: sarthakgoel534@gmail.com
+Preferred-Languages: en
+Policy: https://github.com/sarthak536/sentiment-analysis-platform/security/policy
