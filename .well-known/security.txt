@@ -1,3 +1,12 @@
+# Security Policy for SentimentAI Educational Demo
 Contact: sarthakgoel534@gmail.com
+Contact: https://github.com/sarthak536/sentiment-analysis-platform/issues
+Expires: 2026-07-27T12:00:00.000Z
+Acknowledgments: https://github.com/sarthak536/sentiment-analysis-platform#contributors
 Preferred-Languages: en
-Policy: https://github.com/sarthak536/sentiment-analysis-platform/security/policy
+Canonical: https://sarthak536.github.io/sentiment-analysis-platform/.well-known/security.txt
+Policy: https://github.com/sarthak536/sentiment-analysis-platform/blob/main/README.md
+
+# This is an educational demo project
+# Not intended for commercial or production use
+# Open source project for learning purposes only

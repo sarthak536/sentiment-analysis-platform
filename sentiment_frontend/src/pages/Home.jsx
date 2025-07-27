@@ -40,11 +40,27 @@ function Home() {
           </h1>
           
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-700 mb-10 max-w-4xl mx-auto leading-relaxed font-medium">
+          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-4xl mx-auto leading-relaxed font-medium">
             Transform customer feedback into actionable insights with our 
             <span className="text-indigo-600 font-semibold"> state-of-the-art </span>
             sentiment analysis platform
           </p>
+          
+          {/* Educational Disclaimer */}
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-6 mb-10 max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 justify-center">
+              <span className="text-2xl">🎓</span>
+              <div className="text-center">
+                <p className="text-blue-800 font-semibold text-lg mb-1">Educational Demo Project</p>
+                <p className="text-blue-600 text-sm">
+                  Open source platform for learning sentiment analysis • Not for commercial use • 
+                  <a href="https://github.com/sarthak536/sentiment-analysis-platform" className="underline hover:text-blue-800 transition-colors">
+                    View Source Code
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">

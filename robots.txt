@@ -1,4 +1,15 @@
 User-agent: *
 Allow: /
+Crawl-delay: 1
+
+# Educational demo project
+# Open source sentiment analysis platform
+# For learning purposes only
 
 Sitemap: https://sarthak536.github.io/sentiment-analysis-platform/sitemap.xml
+
+# Disallow crawling of sensitive directories
+Disallow: /.well-known/
+Disallow: /assets/
+Disallow: /*.js$
+Disallow: /*.css$
