@@ -33,26 +33,14 @@ function Contact() {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-200 to-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse animation-delay-2000"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
-        {/* ANTI-PHISHING DISCLAIMER */}
-        <div className="mb-8 p-6 bg-green-100 border-2 border-green-300 rounded-2xl text-center">
-          <h3 className="text-xl font-bold text-green-800 mb-2">🎓 Educational Demo Project</h3>
-          <p className="text-green-700">
-            This is a <strong>portfolio demonstration</strong> of sentiment analysis technology. 
-            No personal data is collected or transmitted. All processing happens locally in your browser.
-          </p>
-          <p className="text-green-600 text-sm mt-2">
-            Source code: <a href="https://github.com/sarthak536/sentiment-analysis-platform" className="underline font-semibold">github.com/sarthak536/sentiment-analysis-platform</a>
-          </p>
-        </div>
-
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-8">
             <span className="bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 bg-clip-text text-transparent">
-              About This Demo
+              Get In Touch
             </span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Explore the source code, contribute, or learn about 
+            Interested in this project? Check out the source code, contribute, or learn about 
             <span className="text-purple-600 font-semibold"> sentiment analysis </span>
             implementation and modern web development.
           </p>
