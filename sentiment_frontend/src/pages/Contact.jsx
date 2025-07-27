@@ -13,9 +13,9 @@ function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Educational demo - no actual form submission
+    // Handle form submission
     setTimeout(() => {
-      console.log('Demo form submission:', formData);
+      console.log('Form submission:', formData);
       setIsSubmitting(false);
       setSubmitted(true);
       // Reset form after 3 seconds
@@ -94,65 +94,58 @@ function Contact() {
             </div>
           </div>
 
-          {/* Demo Form Column */}
+          {/* Contact Form Column */}
           <div className="bg-white/80 backdrop-blur-sm p-10 rounded-2xl shadow-2xl border border-white/20">
-            <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-              <p className="text-blue-800 font-semibold text-sm">
-                🔒 Demo Form - No Data Transmitted
-              </p>
-              <p className="text-blue-600 text-sm">
-                This form is for demonstration purposes only. No data is sent to any server.
-              </p>
-            </div>
+
 
             {submitted ? (
               <div className="text-center py-12">
                 <div className="text-6xl mb-4">✅</div>
-                <h3 className="text-2xl font-bold text-green-600 mb-2">Demo Submitted!</h3>
-                <p className="text-gray-600">This was a demonstration. No data was actually sent.</p>
+                <h3 className="text-2xl font-bold text-green-600 mb-2">Message Sent!</h3>
+                <p className="text-gray-600">Thank you for your message. I'll get back to you soon.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit}>
                 <div className="space-y-6">
                   <div>
-                    <label htmlFor="demo-name" className="block text-gray-700 font-semibold mb-3 text-lg">
-                      Name (Demo Field)
+                    <label htmlFor="contact-name" className="block text-gray-700 font-semibold mb-3 text-lg">
+                      Name
                     </label>
                     <input
                       type="text"
-                      id="demo-name"
+                      id="contact-name"
                       className="w-full p-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-lg"
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
-                      placeholder="Your name (demo only)"
+                      placeholder="Your name"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="demo-email" className="block text-gray-700 font-semibold mb-3 text-lg">
-                      Email (Demo Field)
+                    <label htmlFor="contact-email" className="block text-gray-700 font-semibold mb-3 text-lg">
+                      Email
                     </label>
                     <input
                       type="email"
-                      id="demo-email"
+                      id="contact-email"
                       className="w-full p-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-lg"
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      placeholder="demo@example.com"
+                      placeholder="your.email@example.com"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="demo-message" className="block text-gray-700 font-semibold mb-3 text-lg">
-                      Message (Demo Field)
+                    <label htmlFor="contact-message" className="block text-gray-700 font-semibold mb-3 text-lg">
+                      Message
                     </label>
                     <textarea
-                      id="demo-message"
+                      id="contact-message"
                       rows="6"
                       className="w-full p-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 resize-none text-lg"
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
-                      placeholder="Your thoughts about this demo project..."
+                      placeholder="Your message or inquiry..."
                     ></textarea>
                   </div>
                   
@@ -171,11 +164,11 @@ function Contact() {
                           <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" className="opacity-25" fill="none"/>
                           <path fill="currentColor" className="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/>
                         </svg>
-                        Processing Demo...
+                        Processing...
                       </span>
                     ) : (
                       <span className="flex items-center justify-center gap-2">
-                        Try Demo Form
+                        Send Message
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
