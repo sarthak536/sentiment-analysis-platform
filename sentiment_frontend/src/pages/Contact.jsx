@@ -89,7 +89,7 @@ function Contact() {
               <h4 className="text-xl font-bold mb-6 text-gray-800">Developer Information</h4>
               <div className="space-y-4">
                 {[
-                  { icon: "�", text: "Sarthak Goel", label: "Developer" },
+                  { icon: "💻", text: "Sarthak Goel", label: "Developer" },
                   { icon: "📧", text: "sarthakgoel534@gmail.com", label: "Contact Email" },
                   { icon: "🔗", text: "github.com/sarthak536", label: "GitHub Profile" },
                   { icon: "🎓", text: "Educational Purpose Only", label: "Project Type" }
